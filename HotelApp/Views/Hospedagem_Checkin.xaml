@@ -56,14 +56,14 @@
 
                 </Grid>
 
-                <Label Text="Escolha sua suíte" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bunny" />
+                <Label Text="Escolha sua suíte" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Alfa" TextColor="Peru"/>
                 <Picker x:Name="Suíte"
                 Title="Selecione sua acomodação"/>
 
 
                 <Frame Padding="10" Margin="10">
                     <VerticalStackLayout>
-                        <Label  Text="Período de Estadia" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label  Text="Período de Estadia" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Alfa" TextColor="Peru"/>
 
                         <HorizontalStackLayout Padding="10">
                             <Label  Text="Check-in:"/>
@@ -80,7 +80,8 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" WidthRequest="125" />
+                <Button Text="Avançar" WidthRequest="125"
+                    Clicked="OnHospedagemContratadaClicked"/>
                 
                 
                 <Button Text="Sobre" Margin="10" WidthRequest="85"

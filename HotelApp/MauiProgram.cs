@@ -13,8 +13,10 @@ namespace HotelApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                    fonts.AddFont("Carattere-Regular.ttf", "Cat");
+                    fonts.AddFont("Carattere-Regular.ttf", "Cat"); //guardando as fontes para depois serem usadas
                     fonts.AddFont("PoiretOne-Regular.ttf", "Bunny");
+                    fonts.AddFont("AlfaSlabOne-Regular.ttf", "Alfa");
+                    fonts.AddFont("JotiOne-Regular.ttf", "Jot");
                 });
 
 #if DEBUG

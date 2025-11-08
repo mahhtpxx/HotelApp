@@ -1,9 +1,10 @@
-namespace HotelApp.Views;
-
-public partial class HospedagemContratada : ContentPage
+namespace HotelApp.Views.HospedagemContratada
 {
-	public HospedagemContratada()
-	{
-		InitializeComponent();
-	}
+    public partial class HospedagemContratadaPage : ContentPage
+    {
+        public HospedagemContratadaPage()
+        {
+            InitializeComponent();
+        }
+    }
 }
