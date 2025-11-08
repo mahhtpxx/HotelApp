@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelApp.Views.Sobre.SobrePage"
+             Title="Sobre o App">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Label Text="📱 Aplicativo HotelApp"
+               FontSize="22"
+               HorizontalOptions="Center"
+               TextColor="DarkSlateBlue"/>
+
+        <Label Text="Versão 1.0"
+               FontSize="18"
+               HorizontalOptions="Center"/>
+
+        <Label Text="Desenvolvido por Maeli 😊"
+               FontSize="16"
+               HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

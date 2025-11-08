@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelApp.Views.Hospedagem_Checkin"
+             BackgroundColor="{StaticResource Gray600}"
+            >
+    
+   
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"  Padding="10">
+        <Label  Text="Diária do hotel"
+            FontFamily="Cat" FontSize="75" TextColor="Peru"
+               />
+
+        <Frame>
+
+            <VerticalStackLayout>
+
+                <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, *, 2*">
+
+                    <Label Grid.Row="0" Grid.Column="0"
+                        Text="Adultos:" 
+                    />
+
+                    <Stepper Grid.Row="0" Grid.Column="2"
+                        x:Name="spt_adultos"
+                        Minimum="0"     
+                        Maximum="10"
+                        Increment="1"     
+                    />
+
+                    <Label Grid.Row="0" Grid.Column="1"
+                        TextColor="Peru"
+                        Text="{Binding Value}"
+                        BindingContext="{x:Reference spt_adultos}"
+                        />
+
+
+
+
+                    <Label Grid.Row="1" Grid.Column="0"
+                       Text="Crianças:"   
+                    />
+
+                    <Stepper Grid.Row="1" Grid.Column="2"
+                       x:Name="stp_criancas"
+                       Minimum="0"    
+                       Maximum="10"
+                       Increment="1" />
+
+                    <Label Grid.Row="1" Grid.Column="1"
+                        TextColor="Peru"
+                           Text="{Binding Value}"
+                          BindingContext="{x:Reference stp_criancas}" 
+                        />
+
+                </Grid>
+
+                <Label Text="Escolha sua suíte" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Bunny" />
+                <Picker x:Name="Suíte"
+                Title="Selecione sua acomodação"/>
+
+
+                <Frame Padding="10" Margin="10">
+                    <VerticalStackLayout>
+                        <Label  Text="Período de Estadia" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                        <HorizontalStackLayout Padding="10">
+                            <Label  Text="Check-in:"/>
+                            <DatePicker x:Name="dtof_checkin"
+                              Format="dd/MM/yyyy" />
+                        </HorizontalStackLayout>
+
+
+                        <HorizontalStackLayout  Padding="10">
+                            <Label Text="Check-out:" />
+                            <DatePicker x:Name="dt_check_out"
+                              Format="dd/MM/yyyy" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Button Text="Avançar" WidthRequest="125" />
+                
+                
+                <Button Text="Sobre" Margin="10" WidthRequest="85"
+                  Clicked="OnSobreClicked" />
+                
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>
