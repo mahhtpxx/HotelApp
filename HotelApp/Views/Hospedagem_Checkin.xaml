@@ -59,7 +59,8 @@
 
                 <Label Text="Escolha sua suíte" VerticalOptions="Center" HorizontalOptions="Center" FontFamily="Alfa" TextColor="Peru"/>
                 <Picker x:Name="Suíte"
-                Title="Selecione sua acomodação"/>
+                Title="Selecione sua acomodação"
+                 ItemDisplayBinding="{Binding Descricao}"/>
 
 
                 <Frame Padding="10" Margin="10">

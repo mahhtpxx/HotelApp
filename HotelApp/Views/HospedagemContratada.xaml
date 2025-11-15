@@ -3,13 +3,53 @@
              x:Class="HotelApp.Views.HospedagemContratada.HospedagemContratadaPage"
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource Gray900}">
-    
-    
-    <VerticalStackLayout Padding="30">
-        <Label Text="😭😭😭😭😭😭😭😭😭"
-               FontSize="20"
-               HorizontalOptions="Center"
-               VerticalOptions="Center" />
+
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+        <Label Text="Suíte Super Luxo"
+               TextColor="Peru"
+               FontFamily="Cat"
+               FontSize="55"
+               HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10">
+            <StackLayout  Orientation="Horizontal" >
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Adultos: " />
+                    <Label Text=" 2" 
+                           TextColor="peru" />
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Crianças: " />
+                    <Label Text=" 1" 
+                           TextColor="peru" />
+                </HorizontalStackLayout>
+            </StackLayout>
+        </Frame>
+
+        <Frame Margin="10">
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" />
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024"  TextColor="Peru"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" TextColor="Peru"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="3" TextColor="Peru"/>
+            </Grid>
+        </Frame>
+
+        <Frame Margin="10">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="Valor Total: " />
+                <Label Text="R$ 750,00"  TextColor="Peru"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+
     </VerticalStackLayout>
 
 </ContentPage>

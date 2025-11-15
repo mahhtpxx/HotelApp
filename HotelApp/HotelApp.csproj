@@ -78,7 +78,7 @@
 	  <MauiXaml Update="Views\Hospedagem_Checkin.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\NovaPasta1\Sobre.xaml">
+	  <MauiXaml Update="Views\PSobre\Sobre.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
